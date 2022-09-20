@@ -1,6 +1,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -43,3 +44,24 @@ body {
     padding: 10px 5px;
 }
 
+button{
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#start-Btn {
+    background-color: rgb(131, 194, 215);
+
+}
+
+#next-Btn {
+    background-color: rgb(78, 175, 78);
+}
+
+.hide {
+    display: none;
+}
