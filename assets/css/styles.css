@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 185, 167);
+}
+
+.quiz-card {
+    width: 500px;
+    border: solid;
+    border-radius: 10px;
+    background-color: lightslategray;
+}
+
+#questions{
+    text-align: center;
+    background-color: rgb(120, 210, 240);
+}
+
+#answers {
+    padding: 20px 10px;
+    background-color: rgb(47, 47, 177);
+}
+
+#answers ol{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: auto;
+    justify-content: space-around;
+    list-style: lower-alpha;
+    list-style-position: inside;
+}
+
+#answers li{
+    font-size: larger;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
