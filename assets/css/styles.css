@@ -14,9 +14,10 @@ body {
     border: solid;
     border-radius: 10px;
     background-color: lightslategray;
+    
 }
 
-#questions{
+#question{
     text-align: center;
     background-color: rgb(120, 210, 240);
 }
@@ -24,9 +25,11 @@ body {
 #answers {
     padding: 20px 10px;
     background-color: rgb(47, 47, 177);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-#answers ol{
+#answerbtns{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -36,17 +39,28 @@ body {
     list-style: lower-alpha;
     list-style-position: inside;
 }
+.btns:hover{
+    border: solid 3px;
+}
 
-#answers li{
+.btns{
     font-size: larger;
     background-color: lightseagreen;
     border-radius: 5px;
     padding: 10px 5px;
 }
 
+.btns.correct{
+    background-color: green;
+}
+
+.btns.wrong{
+    background-color: rgb(200, 68, 68);
+}
+
 button{
     margin-top: 15px;
-    width: 120px;
+    width: 150px;
     height: 40px;
     font-size: larger;
     border-radius: 5px;
