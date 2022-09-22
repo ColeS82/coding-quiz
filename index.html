@@ -1,31 +1,29 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz app</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script defer src="./assets/js/script.js"></script>
+    <title>Coding Quiz</title>
 </head>
 <body>
-    <main class="quiz-card">
-        <h1 id="question">
+    <div id="clock">
+        <p id="time"></p>
+    </div>
+    <main id="main_card">
+        <h1 id="questions">
             Press start to begin the quiz
         </h1>
-        <section id="answers" class="hide">
-            <ol id="answerbtns">
-
+        <section id="answer_container" class="hide">
+            <ol id="answer_list">
             </ol>
         </section>
     </main>
-    <div id="buttoncontainer">
-        <button id="start-Btn">
-            Start
-        </button>
-        <button id="next-Btn" class="hide">
-            Next
-        </button>
-    </div>
+    <button id="start_button">start</button>
+    <button id="next_button" class="hide">Next</button>
 </body>
 </html>

@@ -1,35 +1,58 @@
 
-body {
+
+body{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
+    height: 98vh;
+    margin: 0;
     align-items: center;
-    background-color: rgb(200, 185, 167);
+    justify-content: center;
+    background-color: rgba(111, 140, 158, 0.539);
 }
 
-.quiz-card {
-    width: 500px;
-    border: solid;
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    width: 250px;
+    height: 100px;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 15px;
+    background-color: #04009A;
+    color: whitesmoke;
+}
+
+#main_card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #24009C;
     border-radius: 10px;
-    background-color: lightslategray;
+    margin-bottom: 40px;
+    box-shadow: 0 0 300px 20px;
+    padding: 0;
     
 }
 
-#question{
+#questions{
+    font-size: 2.5em;
     text-align: center;
-    background-color: rgb(120, 210, 240);
+    background-color: #F1F4DF;
+    margin: 40px 0px;
+    line-height: 60px;
 }
 
-#answers {
-    padding: 20px 10px;
-    background-color: rgb(47, 47, 177);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+#answer_container{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0028FF;
+    padding: 20px;
+
 }
 
-#answerbtns{
+#answer_list{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -39,43 +62,33 @@ body {
     list-style: lower-alpha;
     list-style-position: inside;
 }
-.btns:hover{
-    border: solid 3px;
-}
 
-.btns{
-    font-size: larger;
-    background-color: lightseagreen;
+.answer_button{
+    background-color: #10EAF0;
+    padding: 5px 20px;
     border-radius: 5px;
-    padding: 10px 5px;
+    font-size: xx-large;
 }
 
-.btns.correct{
-    background-color: green;
+.answer_button:hover{
+    background-color: rgb(84, 184, 191);
 }
 
-.btns.wrong{
-    background-color: rgb(200, 68, 68);
-}
-
-button{
-    margin-top: 15px;
-    width: 150px;
-    height: 40px;
-    font-size: larger;
-    border-radius: 5px;
-    font-weight: bolder;
-}
-
-#start-Btn {
-    background-color: rgb(131, 194, 215);
-
-}
-
-#next-Btn {
-    background-color: rgb(78, 175, 78);
+button {
+    font-size: x-large;
+    border-radius: 10px;
+    width: 160px;
+    background-color: #F1F4DF;
 }
 
 .hide {
     display: none;
+}
+
+.correct{
+    background-color: green;
+}
+
+.wrong{
+    background-color: red;
 }
