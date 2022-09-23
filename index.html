@@ -11,8 +11,9 @@
     <title>Coding Quiz</title>
 </head>
 <body>
+    <!--odd issue of not being able to add the class of hide to #clock... .hide does nothing but I can hide it in js with a direct target... see comment on line 75 in script.js-->
     <div id="clock">
-        <p id="time"></p>
+        <p id="time">00</p>
     </div>
     <main id="main_card">
         <h1 id="questions">
@@ -23,7 +24,16 @@
             </ol>
         </section>
     </main>
+    <main id="results_card" class="hide">
+        <h1 id="results_h1">
+            Results
+        </h1>
+        <ol id="results_list">
+            <li></li>
+        </ol>
+    </main>
     <button id="start_button">start</button>
     <button id="next_button" class="hide">Next</button>
+    <button id="see_results" class="hide">See Results</button>
 </body>
 </html>

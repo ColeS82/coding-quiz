@@ -92,3 +92,26 @@ button {
 .wrong{
     background-color: red;
 }
+
+#results_card{
+    width: 600px;
+    background-color: #24009C;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 300px 20px;
+    padding: 0;
+}
+
+#results_h1{
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #F1F4DF;
+    margin: 40px 0px;
+    line-height: 60px;
+}
+
+#results_list{
+    color: whitesmoke;
+    font-size: xx-large;
+    list-style-position: inside;
+}
